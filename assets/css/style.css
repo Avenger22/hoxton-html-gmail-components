@@ -350,26 +350,26 @@ li {
 .main-sub-2 {
     display: grid;
     align-content: start;
-    grid-gap: 10px;
-    padding-top: 20px;
+    grid-gap: 5px;
+    padding-top: 10px;
 }
 
 .main-sub-2 .main-post {
    display: grid;
    grid-template-columns: 0.5fr 0.5fr 4fr 4fr 1fr;
    place-items: center;
-   grid-gap: 10px;
+   grid-gap: 2px;
 }
 
 .main-sub-2 .main-post p {
     font-family: sans-serif;
     font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
 }
 
 .main-sub-2 .hr-line {
-    border-top: 2px solid #5f6368;
+    border-top: 1px solid #5f6368;
 }
 
 .right-menu .right-menu-sub-2 .right-menu-sub-2-icons {
@@ -379,6 +379,7 @@ li {
     place-items: center;
     padding-top: 45px;
 }
+
 .right-menu .right-menu-sub-2-icons i {
     font-size: 20px;
     color: #5f6368;
@@ -405,19 +406,19 @@ li {
 }
 
 .right-menu .right-menu-sub-1 .first-group span {
-    font-size: 20px;
+    font-size: 15px;
     color: #000;
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .right-menu .right-menu-sub-1 .first-group i {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 800;
 }
 
 .right-menu .right-menu-sub-1 .first-group input {
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 30px;
     border-radius: 10%;
     background-color: transparent;
@@ -435,14 +436,54 @@ li {
     place-items: center;
     padding-left: 15px;
 }
-.right-menu .right-menu-sub-1 .second-group img {
-    height: 50px;
-    border-radius: 30%;
-}
+
 .right-menu .right-menu-sub-1 .second-group span {
     font-size: 12px;
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Nje tjeter grid RIGHT-MENU-SUB-1 */
+.right-menu .right-menu-sub-1 .third-group .title-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 150px;
+}
+
+.right-menu .right-menu-sub-1 .third-group .title-group span, .right-menu .right-menu-sub-1 .third-group .title-group a {
+    color: royalblue;
+}
+
+.right-menu .right-menu-sub-1 .third-group .image-box {
+   display: grid;
+   grid-template-columns: 2fr 2fr 2fr 2fr;
+   grid-gap: 2px;
+   place-items: center;
+}
+
+.right-menu .right-menu-sub-1 .third-group .image-box img {
+    height: 40px;
+    width: 60px;
+    border-radius: 20%;
+    border: 0.5px solid #5f6368;
+}
+
+.right-menu .right-menu-sub-1 .fourth-group .title-group-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+/* .right-menu .right-menu-sub-1 .fourth-group {
+    overflow: scroll;
+} */
+
+.right-menu .right-menu-sub-1 .fourth-group .radio-btn-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding-top: 20px;
 }
 
 
