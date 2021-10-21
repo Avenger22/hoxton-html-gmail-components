@@ -198,16 +198,77 @@ li {
     padding-left: 20px;
 }
 
-.left-menu-sub-2 { /* new added thing */
+/* left-menu-sub-2 starts styling here */ /* new things for components using grids components */
+.left-menu-sub-2 { 
     display: grid;
     align-content: start;
+    grid-gap: 20px;
+}
+
+.left-menu-sub-2 .left-menu-sub-2-item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
     grid-gap: 10px;
+    padding-left: 5px;
+}
+
+.left-menu-sub-2 .left-menu-sub-2-item span {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2px;
+}
+
+.left-menu-sub-2 .left-menu-sub-2-item i {
+    font-size: 20px;
+    color: #5f6368;
+}
+
+.left-menu-sub-2 #special-left-span {
+    font-size: 18px;
+    font-weight: 450;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2px;
+    padding-top: 10px;
+    display: grid;
+    place-items: center;
+}
+
+/* chat */
+.left-menu-sub-2 .left-menu-sub-2-item-chat {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    grid-gap: 10px;
+    padding-left: 5px;
+}
+
+.left-menu-sub-2 #special-left-span-chat {
+    font-size: 18px;
+    font-weight: 450;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2px;
+    padding-top: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.left-menu-sub-2 .left-menu-sub-2-item-chat img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+}
+
+ .left-menu-sub-2 .left-menu-sub-2-item-chat span {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2px;
 }
 
 
-
-
-
+/*main styling here section */
 .main-group {
     padding-top: 20px;
     padding-left: 30px;
