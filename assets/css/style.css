@@ -60,8 +60,8 @@ li {
     border: 2px solid black;
     display: grid;
     grid-template: 
-    "left-menu-sub-1" 0.45fr
-    "left-menu-sub-2" 0.50fr
+    "left-menu-sub-1" 0.35fr
+    "left-menu-sub-2" 0.60fr
     "left-menu-sub-3" 0.05fr / 
      1fr;
 }
@@ -194,12 +194,19 @@ li {
 }
 
 .left-menu-sub-1 .image-group {
-    padding-top: 30px;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 /* left-menu-sub-2 starts styling here */ /* new things for components using grids components */
 .left-menu-sub-2 { 
+    display: grid;
+    padding-top: 20px;
+    align-content: start;
+    /* grid-gap: 25px; */  /* had a big problem when this happened then the left-sub-menu 3 wich is nested pushed the page and didnt llok good */
+}
+
+.left-menu-sub-3 {
     display: grid;
     align-content: start;
     grid-gap: 20px;
@@ -209,7 +216,7 @@ li {
     display: grid;
     grid-template-columns: 50px 1fr;
     align-items: center;
-    grid-gap: 10px;
+    grid-gap: 15px;
     padding-left: 5px;
 }
 
@@ -230,9 +237,10 @@ li {
     font-weight: 450;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.2px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     display: grid;
     place-items: center;
+    padding-bottom: 15px;
 }
 
 /* chat */
@@ -240,7 +248,7 @@ li {
     display: grid;
     grid-template-columns: 40px 1fr;
     align-items: center;
-    grid-gap: 10px;
+    grid-gap: 15px;
     padding-left: 5px;
 }
 
@@ -249,15 +257,16 @@ li {
     font-weight: 450;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.2px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     display: grid;
     place-items: center;
+    padding-top: 20px;
 }
 
 .left-menu-sub-2 .left-menu-sub-2-item-chat img {
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
 
  .left-menu-sub-2 .left-menu-sub-2-item-chat span {
@@ -270,8 +279,10 @@ li {
 
 /*main styling here section */
 .main-group {
-    padding-top: 20px;
-    padding-left: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* display: grid;
+    align-content: start; */
 }
 
 .main-group .main-icons-1 {
@@ -293,14 +304,21 @@ li {
     padding-left: 25px;
 }
 
-.left-icons-group {
-    padding-top: 5px;
-    text-align: center;
+.left-menu-sub-3 .left-icons-group {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    align-items: center;
+    grid-gap: 10px;
 }
 
-.left-icons-group i {
-    padding-left: 7px;
+.left-menu-sub-3 .left-icons-group i {
+    display: grid;
+    place-items: center;
 }
+
+/* .left-icons-group i {
+    padding-left: 7px;
+} */
 
 
 .main-post {
