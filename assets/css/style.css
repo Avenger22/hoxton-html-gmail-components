@@ -141,7 +141,8 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-    grid-gap: 10px;
+    grid-gap: 15px;
+    padding-top: 5px;:
 }
 
 /*customizing grids for header-sub-2 */
@@ -312,10 +313,9 @@ li {
 
 .main .main-sub-1 .main-group {
     display: grid;
-    grid-template-columns: 5fr 1fr;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    grid-template-columns: 1fr auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .main-sub-1 .main-group .main-icons-1 {
