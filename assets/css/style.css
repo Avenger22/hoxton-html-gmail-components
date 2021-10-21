@@ -115,7 +115,7 @@ li {
     grid-template: 
     "right-menu-sub-1 right-menu-sub-2" 1fr / 
      0.8fr 0.2fr;
-     /* overflow: scroll; */
+     overflow: scroll;
 }
 
 .right-menu-sub-1 {
@@ -475,15 +475,23 @@ li {
     place-items: center;
 }
 
-/* .right-menu .right-menu-sub-1 .fourth-group {
-    overflow: scroll;
-} */
+.right-menu .right-menu-sub-1 .fourth-group .title-group-2 span {
+    font-size: 12px;
+    font-weight: 900;
+    color: royalblue;
+}
+
+.right-menu .right-menu-sub-1 .fourth-group .radio-btn-group span {
+    font-size: 12px;
+    font-weight: 500;
+} 
 
 .right-menu .right-menu-sub-1 .fourth-group .radio-btn-group {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding-top: 20px;
+    grid-gap: 5px;
+    padding-top: 30px;
+    place-items: center;
 }
 
 
