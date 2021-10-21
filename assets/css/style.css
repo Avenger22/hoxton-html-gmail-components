@@ -184,36 +184,63 @@ li {
 }
 /*----------  end OF HEADER STYLING JUST STYLING AND LITTLE SUB GRIDS LAYOUT --------------------------------------------------*/
 
+/* START OF STYLING LEFT-MENU--SUB-1 */
+.left-menu .left-menu-sub-1 {
+    display: grid;
+    align-content: start;
+    /* overflow: scroll; */
+}
 
-.left-menu-sub-1 .image-group img {
+.left-menu .left-menu-sub-1 .image-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding-top: 20px;
+}
+
+.left-menu .left-menu-sub-1 .image-group img {
     border-radius: 20%;
     background-color: transparent;
     border: 0.2px solid #fff;
     box-shadow: 0px 1px 0px 1px #f1f3f486;
+    width: 130px;
 }
 
-.left-menu-sub-1 .image-group {
-    padding-top: 10px;
-    padding-left: 10px;
+.left-menu .left-menu-sub-1 .email-icons {
+    display: grid;
+    grid-template-columns: 0.2fr 0.9fr;
+    grid-gap: 5px;
+    padding-left:10px;
 }
 
+.left-menu .left-menu-sub-1 .email-icons i {
+    color: #5f6368;
+    font-size: 14px;
+}
 
+.left-menu .left-menu-sub-1 .email-icons span {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+/* END OF STYLING LEFT-MENU-SUB-1 */
 
 /* left-menu-sub-2 starts styling here */ /* new things for components using grids components */
-.left-menu-sub-2 { 
+.left-menu .left-menu-sub-2 { 
     display: grid;
-    padding-top: 20px;
+    padding-top: 10px;
     align-content: start;
     /* grid-gap: 25px; */  /* had a big problem when this happened then the left-sub-menu 3 wich is nested pushed the page and didnt llok good */
 }
 
-.left-menu-sub-3 {
+.left-menu .left-menu-sub-3 {
     display: grid;
     align-content: start;
-    grid-gap: 20px;
+    grid-gap: 15px;
 }
 
-.left-menu-sub-2 .left-menu-sub-2-item {
+.left-menu .left-menu-sub-2 .left-menu-sub-2-item {
     display: grid;
     grid-template-columns: 50px 1fr;
     align-items: center;
@@ -221,7 +248,7 @@ li {
     padding-left: 5px;
 }
 
-.left-menu-sub-2 .left-menu-sub-2-item span {
+.left-menu .left-menu-sub-2 .left-menu-sub-2-item span {
     font-size: 14px;
     font-weight: 500;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -310,11 +337,13 @@ li {
     padding-left: 25px;
 }
 
+/*LEFT-MENU-SUB-3 STYLING */
+
 .left-menu-sub-3 .left-icons-group {
     display: grid;
     grid-template-columns: 0.3fr 0.3fr 0.3fr;
-    align-items: center;
-    grid-gap: 10px;
+    place-items: center;
+    grid-gap: 1px;
     padding-top: 5px;
 }
 
@@ -324,10 +353,7 @@ li {
     color: #5f6368;
 }
 
-/* .left-icons-group i {
-    padding-left: 7px;
-} */
-
+/* MAIN POST STYLING HERE */
 .main-post {
     padding-left: 5px;
     margin-top: 8px;
