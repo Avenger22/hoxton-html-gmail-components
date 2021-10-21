@@ -2,6 +2,7 @@
     margin: 0px 0px;
     padding: 0px 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body a {
@@ -332,7 +333,6 @@ li {
     padding-left: 7px;
 } */
 
-
 .main-post {
     padding-left: 5px;
     margin-top: 8px;
@@ -369,21 +369,99 @@ li {
 /* .right-menu-sub-2 {
     display: grid;
 } */
-.right-menu-sub-2 .right-menu-sub-2-icons {
+
+.right-menu .right-menu-sub-2 .right-menu-sub-2-icons {
     display: grid;
     grid-gap: 40px; */
     padding-top: 30px;
     place-items: center;
     padding-top: 45px;
 }
-.right-menu-sub-2-icons i {
+.right-menu .right-menu-sub-2-icons i {
     font-size: 24px;
     color: #5f6368;
 }
 
-.right-menu-sub-2 #right-menu-special-icon {
+.right-menu .right-menu-sub-2 #right-menu-special-icon {
    padding-top: 80px;
 }
+
+/*start of great grid */
+.right-menu .right-menu-sub-1 {
+    display: grid;
+    align-content: start;
+    grid-gap: 20px;
+}
+
+.right-menu .right-menu-sub-1 .first-group {
+    padding-top: 20px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 0.8fr 0.2fr;
+    grid-gap: 15px;
+}
+
+.right-menu .right-menu-sub-1 .first-group span {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.right-menu .right-menu-sub-1 .first-group i {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.right-menu .right-menu-sub-1 .first-group input {
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 10%;
+    background-color: transparent;
+    border: 1px solid #5f6368;
+    color: royalblue;
+    font-weight: 700;
+}
+
+/* bug  fixed it with not gird-template just grid-template-columns dunno why it worked with this and not with that*/
+
+.right-menu .right-menu-sub-1 .second-group {
+    display: grid;
+    grid-template-columns: 0.1fr 0.5fr 0.4fr;
+    grid-gap: 10px;
+    place-items: center;
+    padding-left: 15px;
+}
+.right-menu .right-menu-sub-1 .second-group img {
+    height: 50px;
+    border-radius: 30%;
+}
+.right-menu .right-menu-sub-1 .second-group span {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* .right-menu .right-menu-sub-1 .second-group {
+    display: grid;
+    grid-template:
+    "a b c" 1fr
+    "a b c" 1fr
+    "a b c" 1fr /
+    0.1fr 0.6fr 0.3fr;
+    grid-gap: 15px;
+}
+.right-menu .right-menu-sub-1 .second-group .second-group-input {
+    grid-area: a;
+}
+.right-menu .right-menu-sub-1 .second-group .second-group-span {
+    grid-area: b;
+}
+.right-menu .right-menu-sub-1 .second-group .second-group-img{
+    grid-area: c;
+}
+ */
+
 
 /* Media Queries to make it responsive */
 
