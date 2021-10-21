@@ -92,6 +92,7 @@ li {
     "main-sub-1" 0.1fr
     "main-sub-2" 0.9fr / 
      1fr;
+     overflow: scroll;
 }
 
 .main-sub-1 {
@@ -113,6 +114,7 @@ li {
     grid-template: 
     "right-menu-sub-1 right-menu-sub-2" 1fr / 
      0.8fr 0.2fr;
+     /* overflow: scroll; */
 }
 
 .right-menu-sub-1 {
@@ -129,6 +131,7 @@ li {
 
 .header-sub-1 #img2-sub-1 {
     padding-left: 10px;
+    height: 25px;
 }
 
 .header-sub-1 #img1-sub-1 {
@@ -137,7 +140,7 @@ li {
 }
 
 .header-sub-1 #span-sub-1 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 0.2px;
     font-family: 'Courier New', Courier, monospace;
@@ -166,13 +169,13 @@ li {
 
 .icons-header .icons {
     padding-left: 35px;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .icons#special-icon {
     float: right;
-    font-size: 28px;
-    padding-right: 15px;
+    font-size: 20px;
+    padding-right: 30px;
 }
 
 /* .left-menu-sub-1 #button-sub-1 {
@@ -197,6 +200,8 @@ li {
     padding-top: 10px;
     padding-left: 10px;
 }
+
+
 
 /* left-menu-sub-2 starts styling here */ /* new things for components using grids components */
 .left-menu-sub-2 { 
@@ -225,6 +230,7 @@ li {
     font-weight: 500;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.2px;
+    color: royalblue;
 }
 
 .left-menu-sub-2 .left-menu-sub-2-item i {
@@ -274,13 +280,17 @@ li {
     font-weight: 700;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.2px;
+    color: royalblue;
 }
 
-
 /*main styling here section */
+.main-sub-1 {
+    display: grid;
+    align-content: start;
+    padding-top: 20px;
+    padding-left: 20px;
+}
 .main-group {
-    padding-top: 10px;
-    padding-left: 10px;
     /* display: grid;
     align-content: start; */
 }
@@ -309,11 +319,13 @@ li {
     grid-template-columns: 0.3fr 0.3fr 0.3fr;
     align-items: center;
     grid-gap: 10px;
+    padding-top: 5px;
 }
 
 .left-menu-sub-3 .left-icons-group i {
     display: grid;
     place-items: center;
+    color: #5f6368;
 }
 
 /* .left-icons-group i {
@@ -322,8 +334,8 @@ li {
 
 
 .main-post {
-    padding-left: 15px;
-    margin-top: 15px;
+    padding-left: 5px;
+    margin-top: 8px;
 }
 
 .main-post p {
@@ -333,13 +345,13 @@ li {
     letter-spacing: 0.3px;
     text-align: left;
     display: inline;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .main-post span {
     display: inline block;
-    padding-left: 70px;
-    font-size: 20px;
+    float: right;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -354,9 +366,28 @@ li {
     color: #000;
 }
 
+/* .right-menu-sub-2 {
+    display: grid;
+} */
+.right-menu-sub-2 .right-menu-sub-2-icons {
+    display: grid;
+    grid-gap: 40px; */
+    padding-top: 30px;
+    place-items: center;
+    padding-top: 45px;
+}
+.right-menu-sub-2-icons i {
+    font-size: 24px;
+    color: #5f6368;
+}
+
+.right-menu-sub-2 #right-menu-special-icon {
+   padding-top: 80px;
+}
+
 /* Media Queries to make it responsive */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     .right-menu .right-menu-sub-2 {
         display: none;
     }
@@ -372,7 +403,7 @@ li {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 700px) {
     .icons-header .icons {
         font-size: 22px;
         padding-left: 10px;
@@ -409,7 +440,7 @@ li {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .header .header-sub-3, .right-menu {
         display: none;
     }
@@ -425,7 +456,7 @@ li {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
     .header .header-sub-1, .left-menu {
         display: none;
     }
