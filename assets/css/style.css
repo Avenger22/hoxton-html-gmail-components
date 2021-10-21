@@ -306,35 +306,30 @@ li {
     color: royalblue;
 }
 
-/*main styling here section */
-.main-sub-1 {
+/*main styling here section OLY FOR SUB1 */
+.main .main-sub-1 {
     display: grid;
     align-content: start;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-.main-group {
-    /* display: grid;
-    align-content: start; */
 }
 
-.main-group .main-icons-1 {
+.main .main-sub-1 .main-group {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.main-sub-1 .main-group .main-icons-1 {
     font-size: 18px;
     font-weight: bold;
-    padding-left: 15px;
     color: #000;
+    padding-left: 10px;
 }
 
-.arrows {
-    display: inline-block;
-    float: right;
-    padding-right: 30px;
-}
-
-.arrows .arrows-icon {
+.main-sub-1 .arrows .arrows-icon {
     font-size: 18px;
     color: #000;
-    padding-left: 25px;
 }
 
 /*LEFT-MENU-SUB-3 STYLING */
@@ -354,30 +349,25 @@ li {
 }
 
 /* MAIN POST STYLING HERE */
-.main-post {
-    padding-left: 5px;
-    margin-top: 8px;
+.main-sub-2 {
+    display: grid;
+    align-content: start;
+    grid-gap: 10px;
+    padding-top: 20px;
 }
 
-.main-post p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    text-align: left;
-    display: inline;
-    padding-left: 10px;
+.main-sub-2 .main-post {
+   display: grid;
+   grid-template-columns: 0.5fr 0.5fr 4fr 4fr 1fr;
+   place-items: center;
+   grid-gap: 10px;
 }
 
-.main-post span {
-    display: inline block;
-    float: right;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.main-post input {
-    display: inline block;
+.main-sub-2 .main-post p {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
 }
 
 .main-sub-2 .hr-line {
@@ -387,9 +377,6 @@ li {
     color: #000;
 }
 
-/* .right-menu-sub-2 {
-    display: grid;
-} */
 
 .right-menu .right-menu-sub-2 .right-menu-sub-2-icons {
     display: grid;
@@ -463,26 +450,6 @@ li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* .right-menu .right-menu-sub-1 .second-group {
-    display: grid;
-    grid-template:
-    "a b c" 1fr
-    "a b c" 1fr
-    "a b c" 1fr /
-    0.1fr 0.6fr 0.3fr;
-    grid-gap: 15px;
-}
-.right-menu .right-menu-sub-1 .second-group .second-group-input {
-    grid-area: a;
-}
-.right-menu .right-menu-sub-1 .second-group .second-group-span {
-    grid-area: b;
-}
-.right-menu .right-menu-sub-1 .second-group .second-group-img{
-    grid-area: c;
-}
- */
-
 
 /* Media Queries to make it responsive */
 
@@ -498,44 +465,6 @@ li {
     grid-template: 
     "right-menu-sub-1" 1fr / 
      1fr;
-    }
-}
-
-
-@media screen and (max-width: 700px) {
-    .icons-header .icons {
-        font-size: 22px;
-        padding-left: 10px;
-    }
-    .icons-header #special-icon {
-        font-size: 22px;
-        padding-right: 30px;
-    }
-    .header-sub-1 #img1-sub-1, .header-sub-1 #img2-sub-1 {
-        height: 20px;
-        margin-top: 10px;
-    }
-    .header-sub-1 #span-sub-1 {
-        font-size: 15px;
-        margin-top: 15px;
-        padding-left: 15px;
-    }
-    .header-sub-2 .search-bar {
-        padding-left: 40px;
-    }
-    .left-menu-sub-1 .image-group img {
-        height: 70px;
-        width: 120px;
-        padding-right: 25px;
-    }
-    .main-sub-2 .main-post p {
-        font-size: 11px;
-        display: inline-block;
-    }
-    .main-sub-2 .main-post span, .main-sub-2 .main-post input {
-        font-size: 11px;
-        display: inline-block;
-        text-align: center;
     }
 }
 
