@@ -134,13 +134,14 @@ li {
 .header .header-sub-1 {
     display: grid;
     align-content: start;
+    place-items: center;
 }
 
 .header .header-sub-1 .header-group {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-    grid-gap: 15px;
+    grid-gap: 10px;
 }
 
 /*customizing grids for header-sub-2 */
@@ -158,12 +159,12 @@ li {
 .header-sub-2 .search-bar input {
     background-color: #f1f3f4;
     height: 35px;
-    width: 50vw;
+    width: 40vw;
     border-radius: 5%;
     font-family:'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 /*-------------------------------------------------------*/
 
@@ -179,7 +180,7 @@ li {
     place-items: center;
 }
 .header-sub-3 .icons-header i {
-    font-size: 22px;
+    font-size: 20px;
     color: #5f6368;
 }
 /*----------  end OF HEADER STYLING JUST STYLING AND LITTLE SUB GRIDS LAYOUT --------------------------------------------------*/
@@ -195,27 +196,27 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .left-menu .left-menu-sub-1 .image-group img {
     border-radius: 20%;
     background-color: transparent;
-    border: 0.2px solid #fff;
-    box-shadow: 0px 1px 0px 1px #f1f3f486;
-    width: 130px;
+    box-shadow: 0px 2px 2px 2px #f1f3f486;
+    width: 120px;
 }
 
 .left-menu .left-menu-sub-1 .email-icons {
     display: grid;
     grid-template-columns: 0.2fr 0.9fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
     padding-left:10px;
+    padding-top: 10px;
 }
 
 .left-menu .left-menu-sub-1 .email-icons i {
     color: #5f6368;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .left-menu .left-menu-sub-1 .email-icons span {
@@ -237,15 +238,14 @@ li {
 .left-menu .left-menu-sub-3 {
     display: grid;
     align-content: start;
-    grid-gap: 15px;
+    grid-gap: 20px;
 }
 
 .left-menu .left-menu-sub-2 .left-menu-sub-2-item {
     display: grid;
     grid-template-columns: 50px 1fr;
-    align-items: center;
-    grid-gap: 15px;
-    padding-left: 5px;
+    place-items: center;
+    grid-gap: 10px;
 }
 
 .left-menu .left-menu-sub-2 .left-menu-sub-2-item span {
@@ -257,7 +257,7 @@ li {
 }
 
 .left-menu-sub-2 .left-menu-sub-2-item i {
-    font-size: 18px;
+    font-size: 16px;
     color: #5f6368;
 }
 
@@ -268,16 +268,15 @@ li {
     letter-spacing: 0.2px;
     display: grid;
     place-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 /* chat */
 .left-menu-sub-2 .left-menu-sub-2-item-chat {
     display: grid;
-    grid-template-columns: 40px 1fr;
-    align-items: center;
-    grid-gap: 15px;
-    padding-left: 5px;
+    grid-template-columns: 50px 1fr;
+    place-items: center;
+    grid-gap: 5px;
 }
 
 .left-menu-sub-2 #special-left-span-chat {
@@ -287,7 +286,8 @@ li {
     letter-spacing: 0.2px;
     display: grid;
     place-items: center;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .left-menu-sub-2 .left-menu-sub-2-item-chat img {
