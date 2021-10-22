@@ -4,16 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 body a {
     text-decoration: none;
-    color: #5f6368;
 }
-
-li {
-    list-style: none;
-}
-
 /* Section 1 starts here */
 
 .container-menus {
@@ -32,7 +25,7 @@ li {
 
 .header {
     grid-area: header;
-    border: 2px solid black;
+    outline: 1px solid black;
     display: grid;
     grid-template: 
     "header-sub-1 header-sub-2 header-sub-3" 1fr / 
@@ -41,24 +34,24 @@ li {
 
 .header-sub-1 {
     grid-area: header-sub-1;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 }
 
 .header-sub-2 {
     grid-area: header-sub-2;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 }
 
 .header-sub-3 {
     grid-area: header-sub-3;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 } /* end of nested grid for header */
 
 /* start of nested grid for left-menu */
 
 .left-menu {
     grid-area: left-menu;
-    border: 2px solid black;
+    outline: 1px solid black;
     display: grid;
     grid-template: 
     "left-menu-sub-1" 0.35fr
@@ -69,17 +62,17 @@ li {
 
 .left-menu-sub-1 {
     grid-area: left-menu-sub-1;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 }
 
 .left-menu-sub-2 {
     grid-area: left-menu-sub-2;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 }
 
 .left-menu-sub-3 {
     grid-area: left-menu-sub-3;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 }
 /*end of nested grid for left menu */
 
@@ -87,7 +80,7 @@ li {
 
 .main {
     grid-area: main;
-    border: 2px solid black;
+    outline: 1px solid black;
     display: grid;
     grid-template: 
     "main-sub-1" 0.1fr
@@ -98,19 +91,19 @@ li {
 
 .main-sub-1 {
     grid-area: main-sub-1;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 }
 
 .main-sub-2 {
     grid-area: main-sub-2;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 }
 
 /* creating a nested grid for right part */
 
 .right-menu {
     grid-area: right-menu;
-    border: 2px solid black;
+    outline: 1px solid black;
     display: grid;
     grid-template: 
     "right-menu-sub-1 right-menu-sub-2" 1fr / 
@@ -120,12 +113,12 @@ li {
 
 .right-menu-sub-1 {
     grid-area: right-menu-sub-1;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 }
 
 .right-menu-sub-2 {
     grid-area: right-menu-sub-2;
-    border: 1px solid black;
+    outline: 0.5px solid black;
 }
 
 /*end of nested grid of right menu sub */
@@ -374,7 +367,7 @@ li {
 
 .right-menu .right-menu-sub-2 .right-menu-sub-2-icons {
     display: grid;
-    grid-gap: 40px; */
+    grid-gap: 40px; 
     padding-top: 30px;
     place-items: center;
     padding-top: 45px;
@@ -504,7 +497,7 @@ li {
 
    .right-menu {
     grid-area: right-menu;
-    border: 2px solid black;
+    outline: 1px solid black;
     display: grid;
     grid-template: 
     "right-menu-sub-1" 1fr / 
